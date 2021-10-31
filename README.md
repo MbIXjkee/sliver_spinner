@@ -1,6 +1,6 @@
 # Sliver-spinner
 
-<img src="https://i.ibb.co/4t1NVGX/sliver-spinner.gif" width="200" alt="Sliver-spinner-demo">
+<img src="https://i.ibb.co/6m0d6wG/sliver-spinner.gif" width="200" alt="Sliver-spinner-demo">
 
 ## Description
 
