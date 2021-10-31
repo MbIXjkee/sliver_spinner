@@ -1,16 +1,27 @@
-# Sliver-spinner
+import 'package:flutter/material.dart';
+import 'package:sliver_spinner/sliver_spinner.dart';
 
-<img src="https://i.ibb.co/4t1NVGX/sliver-spinner.gif" width="200" alt="Sliver-spinner-demo">
+void main() {
+  runApp(const MyApp());
+}
 
-## Description
+/// App widget.
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-Simple sliver that spin when moving out from leading edge of viewport.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const DemoScreen(),
+    );
+  }
+}
 
-## How to use
-
-For using you have to place this widget in scrollable area. It may look like:
-
-```dart
+/// Screen for demonstration sliver.
 class DemoScreen extends StatelessWidget {
   static const urls = <String>[
     'https://www.stockvault.net/data/2018/12/30/258501/preview16.jpg',
@@ -35,8 +46,7 @@ class DemoScreen extends StatelessWidget {
       body: CustomScrollView(
         slivers: urls
             .map(
-              (url) =>
-              Spinner(
+              (url) => Spinner(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.network(
@@ -52,8 +62,3 @@ class DemoScreen extends StatelessWidget {
     );
   }
 }
-```
-
-## Maintainer
-
-[Mikhail Zotyev](https://github.com/MbIXjkee)

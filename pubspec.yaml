@@ -1,0 +1,21 @@
+name: sliver_spinner
+description: A sliver that spin while move out of the screen.
+version: 0.0.1
+homepage: "https://github.com/MbIXjkee/sliver_spinner"
+repository: "https://github.com/MbIXjkee/sliver_spinner"
+issue_tracker: "https://github.com/MbIXjkee/sliver_spinner/issues"
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  surf_lint_rules: ^1.0.0
+
+flutter:
