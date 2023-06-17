@@ -4,9 +4,9 @@ import 'package:flutter/rendering.dart';
 
 const double _kQuarterTurnsInRadians = math.pi / 2.0;
 
-/// The widget that spin while move out of the screen.
+/// The widget that spins while moving out from the screen.
 class Spinner extends SingleChildRenderObjectWidget {
-  /// Create an instance of Spinner.
+  /// Creates an instance of [Spinner].
   const Spinner({
     Key? key,
     required Widget child,
