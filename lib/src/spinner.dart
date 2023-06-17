@@ -114,7 +114,7 @@ class _SpinnerRenderSliver extends RenderSliver
     }
     final childParentData = child.parentData! as SliverPhysicalParentData;
 
-    // for readable
+    // for make it more readable
     // ignore: cascade_invocations
     childParentData.applyPaintTransform(transform);
   }
